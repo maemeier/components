@@ -18,7 +18,8 @@
 <p>Subtitle</p>
 <p>Body Text</p>
 <p>Button</p>
-<p>caption</p>
+<p>Caption</p>
+<p>Color</p>
 
     </div>
 <div class="secondRow">
@@ -38,10 +39,40 @@
   <div class="">
     <input class="inputField" type="text" name="" value="" id="captionSize" onchange="applySize();" onclick="">
   </div>
+  <input type="color" class="colorPicker" id="myColor">
+
 </div>
 
 <div class="thirdRow">
   <h5>Style</h5>
+  <select onchange="myFunction(this);" size="0">
+    <option>normal</option>
+    <option>bold</option>
+    <option>bolder</option>
+    <option>lighter</option>
+
+  </select>
+  <select onchange="myFunction(this);" size="0">
+    <option>normal</option>
+    <option>bold</option>
+    <option>bolder</option>
+    <option>lighter</option>
+
+  </select>
+  <select onchange="myFunction(this);" size="0">
+    <option>normal</option>
+    <option>bold</option>
+    <option>bolder</option>
+    <option>lighter</option>
+
+  </select>
+  <select onchange="myFunction(this);" size="0">
+    <option>normal</option>
+    <option>bold</option>
+    <option>bolder</option>
+    <option>lighter</option>
+
+  </select>
   <select onchange="myFunction(this);" size="0">
     <option>normal</option>
     <option>bold</option>
@@ -59,7 +90,6 @@
 
   </div>
 
-  <input type="color" class="colorPicker" id="myColor">
   <button type="button" name="button" class="button-1" onclick="applyAll()">Apply fucking all</button>
 </div>
 
@@ -79,8 +109,14 @@
 
 <button type="button" name="button" class="button-1" id="button">Fucking button</button>
 <h4 id="caption">This is fucking tiny caption</h5>
-</div>
+  <!-- components -->
+  <div class="card">
+    <p id="bodyText" class="paragraph">
+      Anyone who loves both copywriting and swearing (who doesn’t?) will be relieved to hear that there’s a new tool to help with both, in the shape of Lorem fucking ipsum.
 
+    </p>
+
+</div>
 
 
 <script>

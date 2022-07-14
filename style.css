@@ -91,10 +91,12 @@ padding-left: 10px
 }
 
 .colorPicker{
-  width: 30px;
+  width: 100px;
   height: 30px;
-  border-radius: 50;
-  border: none
+padding: 0px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 5px;
 }
 
 h5{
@@ -104,4 +106,10 @@ h5{
   padding-bottom: 15px;
   color:#222222 ;
   font-size: 16px
+}
+
+.card{
+  width: 250px;
+  height: 350px;
+  background: pink
 }

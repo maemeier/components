@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<body>
+<div id="control">
+  <h2>Typo Generate</h2>
+
+  <p>Don't you fucking make developers cry</p>
+   <!-- <input class="button-1" type="button" id="myInput" onclick=myButton() value="click me"> px -->
+  <!-- <button class="button-1" type="button" onclick=myTitle()> Title </button>
+  <button class="button-1" type="button" onclick=mySubtitle()> Subtitle </button>
+  <button class="button-1" type="button" onclick=myPara()> Paragraph </button> -->
+
+  <!-- <button type="button" name="button" onclick="applySize()">apply size</button> -->
+  <input type="text" name="" value="" id="textSize" onclick="applySize()"> Title
+  <input type="text" name="" value="" id="textSize" onclick="applySize()"> Subtitle
+  <input type="text" name="" value="" id="textSize" onclick="applySize()"> Paragraph
+
+  <input type="color"  id="myColor">
+  <button class="button-1" type="button" name="button" onclick="myFunction()">Color</button>
+
+  <button type="button" name="button" onclick="applyAll()">Apply all</button>
+</div>
+
+
+<div id="container">
+  <h1 id="title">
+  This is fucking title
+  </h1>
+
+  <h3 id="subtitle">
+    I'm fucking subtitle, better keep it fucking short.
+  </h3>
+
+  <p id="para" class="paragraph">
+    Anyone who loves both copywriting and swearing (who doesn’t?) will be relieved to hear that there’s a new tool to help with both, in the shape of Lorem fucking ipsum. The handy online tool, created by Good Fucking Design Advice, bills itself as the placeholder text for “people who have some fucking passion!” The site lets you choose either a number of paragraphs or words, and generates a barrage of very sweary text accordingly.
+
+  </p>
+
+
+  <!-- <p id="btn1"></p> -->
+
+<!-- <button class="button-1" type="button" name="button" id="myInput1"> Button</button> -->
+</div>
+
+
+
+<script>
+function myTitle(){
+  var fontSize = document.getElementById("title");
+  fontSize.style.fontSize = fontSize
+}
+function mySubtitle(){
+  var fontSize = document.getElementById("subtitle");
+  fontSize.style.fontSize = "24px"
+}
+
+function myPara(){
+  var fontSize = document.getElementById("para");
+  fontSize.style.fontSize = "18px"
+}
+
+function myFunction() {
+  var getColor = document.getElementById("myColor").value
+  document.getElementById("para").style.color = getColor
+}
+
+function applySize() {
+  var size = document.getElementById("textSize").value
+  document.getElementById("para").style.fontSize = `${size}px`
+  console.log(applySize);
+}
+
+function applyAll(){
+  myTitle()
+  mySubtitle()
+  myFunction()
+  applySize()
+  myPara()
+}
+
+function myButton(){
+  var fontSize = document.getElementById("myInput");
+  document.getElementById("myInput1").innerHTML = "Fucking button"
+  document.getElementById("myInput1").style.backgroundColor = "lightblue"
+  document.getElementById("myInput1").style.color = "#222222"
+  document.getElementById("myInput1").style.textTransform = "uppercase"
+}
+</script>
+
+</body>
+</html>

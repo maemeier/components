@@ -9,10 +9,30 @@
   <h2>Typo Generate</h2>
 
   <p>Don't you fucking make developers cry</p>
-  <input type="text" name="" value="" id="titleSize" onclick=""> Title
-  <input type="text" name="" value="" id="subtitleSize"  onclick=""> Subtitle
+  <div class="inputContainer">
+    <div class="">
+      <label>Title</label><input type="text" name="" value="" id="titleSize" onclick="">
+    </div>
+<div class="">
+    <label>Subtitle</label><input type="text" name="" value="" id="subtitleSize"  onclick="">
+</div>
+
+<div class="">
+    <label>Body Text</label><input type="text" name="" value="" id="bodyTextSize"  onclick="">
+</div>
+
+<div class="">
+    <label>Button</label><input type="text" name="" value="" id="buttonSize"  onclick="">
+</div>
+<div class="">
+    <label>Caption</label><input type="text" name="" value="" id="captionSize"  onclick="">
+</div>
+
+
+  </div>
+
   <input type="color"  id="myColor">
-  <button type="button" name="button" onclick="applyAll()">Apply all</button>
+  <button type="button" name="button" class="button-1" onclick="applyAll()">Apply fucking all</button>
 </div>
 
 
@@ -21,14 +41,15 @@
   This is fucking title
   </h1>
   <h3 id="subtitle"  class="changeTextSize">
-    I'm fucking subtitle, better keep it fucking short.
+    I'm a fucking subtitle, better keep it fucking short.
   </h3>
 
-  <p id="para" class="paragraph">
+  <p id="bodyText" class="paragraph">
     Anyone who loves both copywriting and swearing (who doesn’t?) will be relieved to hear that there’s a new tool to help with both, in the shape of Lorem fucking ipsum. The handy online tool, created by Good Fucking Design Advice, bills itself as the placeholder text for “people who have some fucking passion!” The site lets you choose either a number of paragraphs or words, and generates a barrage of very sweary text accordingly.
 
   </p>
-
+<button type="button" name="button" class="button-1" id="button">Fucking button</button>
+<h5 id="caption">This is fucking tiny caption</h5>
 </div>
 
 
@@ -36,14 +57,20 @@
 <script>
 function applyColor() {
   var getColor = document.getElementById("myColor").value
-  document.getElementById("para").style.color = getColor
+  document.getElementById("bodyText").style.color = getColor
 }
 
 function applySize() {
   var titlesize = document.getElementById("titleSize").value
   var subtitlesize = document.getElementById("subtitleSize").value
+  var bodyTextSize = document.getElementById("bodyTextSize").value
+  var buttonSize = document.getElementById("buttonSize").value
+  var captionSize = document.getElementById("captionSize").value
   document.getElementById("title").style.fontSize = `${titlesize}px`
   document.getElementById("subtitle").style.fontSize = `${subtitlesize}px`
+  document.getElementById("bodyText").style.fontSize = `${bodyTextSize}px`
+  document.getElementById("button").style.fontSize = `${buttonSize}px`
+  document.getElementById("caption").style.fontSize = `${captionSize}px`
 }
 
 function applyAll(){

@@ -9,29 +9,18 @@
   <h2>Typo Generate</h2>
 
   <p>Don't you fucking make developers cry</p>
-   <!-- <input class="button-1" type="button" id="myInput" onclick=myButton() value="click me"> px -->
-  <!-- <button class="button-1" type="button" onclick=myTitle()> Title </button>
-  <button class="button-1" type="button" onclick=mySubtitle()> Subtitle </button>
-  <button class="button-1" type="button" onclick=myPara()> Paragraph </button> -->
-
-  <!-- <button type="button" name="button" onclick="applySize()">apply size</button> -->
-  <input type="text" name="" value="" id="textSize" onclick="applySize()"> Title
-  <input type="text" name="" value="" id="textSize" onclick="applySize()"> Subtitle
-  <input type="text" name="" value="" id="textSize" onclick="applySize()"> Paragraph
-
+  <input type="text" name="" value="" id="titleSize" onclick=""> Title
+  <input type="text" name="" value="" id="subtitleSize"  onclick=""> Subtitle
   <input type="color"  id="myColor">
-  <button class="button-1" type="button" name="button" onclick="myFunction()">Color</button>
-
   <button type="button" name="button" onclick="applyAll()">Apply all</button>
 </div>
 
 
 <div id="container">
-  <h1 id="title">
+  <h1 id="title"  class="changeTextSize">
   This is fucking title
   </h1>
-
-  <h3 id="subtitle">
+  <h3 id="subtitle"  class="changeTextSize">
     I'm fucking subtitle, better keep it fucking short.
   </h3>
 
@@ -40,46 +29,26 @@
 
   </p>
 
-
-  <!-- <p id="btn1"></p> -->
-
-<!-- <button class="button-1" type="button" name="button" id="myInput1"> Button</button> -->
 </div>
 
 
 
 <script>
-function myTitle(){
-  var fontSize = document.getElementById("title");
-  fontSize.style.fontSize = fontSize
-}
-function mySubtitle(){
-  var fontSize = document.getElementById("subtitle");
-  fontSize.style.fontSize = "24px"
-}
-
-function myPara(){
-  var fontSize = document.getElementById("para");
-  fontSize.style.fontSize = "18px"
-}
-
-function myFunction() {
+function applyColor() {
   var getColor = document.getElementById("myColor").value
   document.getElementById("para").style.color = getColor
 }
 
 function applySize() {
-  var size = document.getElementById("textSize").value
-  document.getElementById("para").style.fontSize = `${size}px`
-  console.log(applySize);
+  var titlesize = document.getElementById("titleSize").value
+  var subtitlesize = document.getElementById("subtitleSize").value
+  document.getElementById("title").style.fontSize = `${titlesize}px`
+  document.getElementById("subtitle").style.fontSize = `${subtitlesize}px`
 }
 
 function applyAll(){
-  myTitle()
-  mySubtitle()
-  myFunction()
+  applyColor()
   applySize()
-  myPara()
 }
 
 function myButton(){

@@ -9,11 +9,39 @@
 <div id="control">
   <h2>Type Generator</h2>
 
-  <p>Don't you fucking make developers cry</p>
+  <p>Don't make developers cry</p>
+  <br>
   <div class="inputContainer">
-    <div class="">
-      <label>Title </label><input class="inputField" type="text" name="" value="" id="titleSize" onclick="">
+    <div class="firstRow">
+      <h5>header</h5>
+<p>Title</p>
+<p>Subtitle</p>
+<p>Body Text</p>
+<p>Button</p>
+<p>caption</p>
 
+    </div>
+<div class="secondRow">
+  <h5>Style</h5>
+  <div class="">
+    <input class="inputField" type="text" name="" value="" placeholder="Title" id="titleSize" onclick="">
+
+      <input class="inputField" type="text" name="" value="" placeholder="Subtitle" id="subtitleSize"  onclick="">
+
+  </div>
+  <div class="">
+      <input class="inputField" type="text" placeholder="Body text" name="" value="" id="bodyTextSize"  onclick="">
+  </div>
+  <div class="">
+    <input  class="inputField" type="text" name="" value="" placeholder="button"  id="buttonSize"  onclick="">
+  </div>
+  <div class="">
+    <input class="inputField" type="text" name="" value="" placeholder="caption" id="captionSize"  onclick="">
+  </div>
+</div>
+
+<div class="thirdRow">
+  <h5>Size</h5>
   <select onchange="myFunction(this);" size="0">
     <option>normal</option>
     <option>bold</option>
@@ -21,33 +49,17 @@
     <option>lighter</option>
 
   </select>
-    </div>
-<div class="">
-    <label>Subtitle </label><input class="inputField" type="text" name="" value="" id="subtitleSize"  onclick="">
-    <select onchange="myFunction(this);" size="0">
-      <option>normal</option>
-      <option>bold</option>
-      <option>bolder</option>
-      <option>lighter</option>
-
-    </select>
 </div>
 
-<div class="">
-    <label>Body Text </label><input class="inputField" type="text" name="" value="" id="bodyTextSize"  onclick="">
-</div>
 
-<div class="">
-    <label>Button </label><input  class="inputField" type="text" name="" value="" id="buttonSize"  onclick="">
-</div>
-<div class="">
-    <label>Caption </label><input class="inputField" type="text" name="" value="" id="captionSize"  onclick="">
-</div>
+
+
+
 
 
   </div>
 
-  <input type="color"  id="myColor">
+  <input type="color" class="colorPicker" id="myColor">
   <button type="button" name="button" class="button-1" onclick="applyAll()">Apply fucking all</button>
 </div>
 
@@ -66,7 +78,7 @@
   </p>
 
 <button type="button" name="button" class="button-1" id="button">Fucking button</button>
-<h5 id="caption">This is fucking tiny caption</h5>
+<h4 id="caption">This is fucking tiny caption</h4>
 </div>
 
 

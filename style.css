@@ -60,9 +60,9 @@ font-family: "Poppins", sans-serif;
 }
 
 .inputContainer{
-
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
 text-align: left;
-
 
 
 }
@@ -70,13 +70,38 @@ text-align: left;
   width: 350px;
   background: lightblue;
 float:left;
-height: 100vh
+height: 100vh;
+padding-top: 10px;
+
 
 }
 
 .inputField, select{
-  width: 70px;
+  width: 100px;
   height: 30px;
   border: 1px solid lightgrey;
 border-radius: 3px;
+padding: 5px;
+margin-left: 5px;
+margin-bottom: 5px;
+}
+.firstRow p {
+padding-bottom: 12px;
+padding-left: 10px
+}
+
+.colorPicker{
+  width: 30px;
+  height: 30px;
+  border-radius: 50;
+  border: none
+}
+
+h5{
+  text-align: left;
+  padding-left: 10px;
+  font-weight: normal;
+  padding-bottom: 15px;
+  color:#222222 ;
+  font-size: 16px
 }

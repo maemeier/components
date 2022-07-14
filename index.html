@@ -13,13 +13,14 @@
   <br>
   <div class="inputContainer">
     <div class="firstRow">
-      <h5>Header</h5>
+      <h5>Naming</h5>
 <p>Title</p>
 <p>Subtitle</p>
 <p>Body Text</p>
 <p>Button</p>
 <p>Caption</p>
-<p>Color</p>
+<p>Radius</p>
+<p>Text color</p>
 
     </div>
 <div class="secondRow">
@@ -38,6 +39,9 @@
   </div>
   <div class="">
     <input class="inputField" type="text" name="" value="" id="captionSize" onchange="applySize();" onclick="">
+  </div>
+  <div class="">
+    <input class="inputField" type="text" name="" value="" id="radiusSize" onchange="applySize();" onclick="">
   </div>
   <input type="color" class="colorPicker" id="myColor">
 
@@ -107,14 +111,15 @@
 
   </p>
 
-<button type="button" name="button" class="button-1" id="button">Fucking button</button>
+<button type="button" name="button" class="button-1" id="button">Primary button</button>
+<button type="button" name="button" class="button-1" id="button">Secondary button</button>
+<button type="button" name="button" class="button-1" id="button">Success button</button>
+<button type="button" name="button" class="button-1" id="button">warning button</button>
+<button type="button" name="button" class="button-1" id="button">error button</button>
+<button type="button" name="button" class="button-testing" id="test-button">testing button</button>
 <h4 id="caption">This is fucking tiny caption</h5>
   <!-- components -->
-  <div class="card">
-    <p id="bodyText" class="paragraph">
-      Anyone who loves both copywriting and swearing (who doesn’t?) will be relieved to hear that there’s a new tool to help with both, in the shape of Lorem fucking ipsum.
 
-    </p>
 
 </div>
 
@@ -130,22 +135,31 @@ function myFunction(selectTag) {
   document.getElementById("title").style.fontWeight = listValue;
 }
 
+// function applyRadius(){
+//   var borderRadius = document.getElementById("radiusSize").value
+//   document.getElementById("test-button").style.borderRadius = "20px"
+// }
+
 function applySize() {
   var titlesize = document.getElementById("titleSize").value
   var subtitlesize = document.getElementById("subtitleSize").value
   var bodyTextSize = document.getElementById("bodyTextSize").value
   var buttonSize = document.getElementById("buttonSize").value
   var captionSize = document.getElementById("captionSize").value
+  var borderRadius = document.getElementById("radiusSize").value
   document.getElementById("title").style.fontSize = `${titlesize}px`
   document.getElementById("subtitle").style.fontSize = `${subtitlesize}px`
   document.getElementById("bodyText").style.fontSize = `${bodyTextSize}px`
   document.getElementById("button").style.fontSize = `${buttonSize}px`
   document.getElementById("caption").style.fontSize = `${captionSize}px`
+  document.getElementById("test-button").style.borderRadius = `${borderRadius}px`
+
 }
 
 function applyAll(){
   applyColor()
   applySize()
+
 
 }
 

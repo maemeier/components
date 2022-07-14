@@ -63,15 +63,30 @@ font-family: "Poppins", sans-serif;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 text-align: left;
+max-width: 350px;
+margin: auto;
 
+}
+
+.inputContainer2{
+display: grid;
+grid-template-columns: 1fr 1fr;
+text-align: left;
+max-width: 350px;
+margin: auto;
+}
+
+.inputContainer2 p{
+  padding-bottom: 10px
 
 }
 #control{
-  width: 350px;
+  width: 450px;
   background: lightblue;
 float:left;
 height: 100vh;
 padding-top: 10px;
+display: auto 0;
 
 
 }
@@ -87,7 +102,7 @@ margin-bottom: 5px;
 }
 .firstRow p {
 padding-bottom: 12px;
-padding-left: 10px
+
 }
 
 .colorPicker{
@@ -101,7 +116,7 @@ padding-left: 10px
 
 h5{
   text-align: left;
-  padding-left: 10px;
+
   font-weight: bold;
   padding-bottom: 15px;
   color:#222222 ;
@@ -116,4 +131,14 @@ h5{
 .button-testing{
   padding: 10px;
   border:none
+}
+
+.colorPlatte{
+  width: 30px;
+  height: 30px;
+  background-color: violet;
+  display: inline-block;
+}
+.colorLable{
+
 }

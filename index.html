@@ -95,6 +95,27 @@
   </div>
 
   <button type="button" name="button" class="button-1" onclick="applyAll()">Apply fucking all</button>
+
+  <div class="colorContainer">
+    <br>
+    <!-- <p>Color platte</p> -->
+<div class="inputContainer2">
+  <div class="">
+<h5>Name</h5>
+<p>Primary color</p>
+<p>Secondary color</p>
+<p>Success color</p>
+<p>Warning color</p>
+<p>Error color</p>
+  </div>
+
+  <div class="">
+<h5>Color</h5>
+  </div>
+
+</div>
+
+  </div>
 </div>
 
 
@@ -132,6 +153,7 @@ function applyColor() {
 function myFunction(selectTag) {
   var listValue = selectTag.options[selectTag.selectedIndex].text;
   document.getElementById("title").style.fontWeight = listValue;
+  document.getElementById("subtitle").style.fontWeight = listValue;
 }
 
 // function applyRadius(){

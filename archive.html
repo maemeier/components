@@ -105,3 +105,8 @@ function myButton(){
 
 </body>
 </html>
+
+function myFunction(selectTag) {
+  var listValue = selectTag.options[selectTag.selectedIndex].text;
+  document.getElementById("title").style.fontWeight = listValue;
+}

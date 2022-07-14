@@ -3,29 +3,46 @@
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet"><body>
 <div id="control">
-  <h2>Typo Generate</h2>
+  <h2>Type Generator</h2>
 
   <p>Don't you fucking make developers cry</p>
   <div class="inputContainer">
     <div class="">
-      <label>Title</label><input type="text" name="" value="" id="titleSize" onclick="">
+      <label>Title </label><input type="text" name="" value="" id="titleSize" onclick="">
+
+  <select onchange="myFunction(this);" size="0">
+    <option>normal</option>
+    <option>bold</option>
+    <option>bolder</option>
+    <option>lighter</option>
+    <option>100</option>
+    <option>200</option>
+    <option>300</option>
+    <option>400</option>
+    <option>500</option>
+    <option>600</option>
+    <option>700</option>
+    <option>800</option>
+    <option>900</option>
+  </select>
     </div>
 <div class="">
-    <label>Subtitle</label><input type="text" name="" value="" id="subtitleSize"  onclick="">
+    <label>Subtitle </label><input type="text" name="" value="" id="subtitleSize"  onclick="">
 </div>
 
 <div class="">
-    <label>Body Text</label><input type="text" name="" value="" id="bodyTextSize"  onclick="">
+    <label>Body Text </label><input type="text" name="" value="" id="bodyTextSize"  onclick="">
 </div>
 
 <div class="">
-    <label>Button</label><input type="text" name="" value="" id="buttonSize"  onclick="">
+    <label>Button </label><input type="text" name="" value="" id="buttonSize"  onclick="">
 </div>
 <div class="">
-    <label>Caption</label><input type="text" name="" value="" id="captionSize"  onclick="">
+    <label>Caption </label><input type="text" name="" value="" id="captionSize"  onclick="">
 </div>
 
 
@@ -48,6 +65,7 @@
     Anyone who loves both copywriting and swearing (who doesn’t?) will be relieved to hear that there’s a new tool to help with both, in the shape of Lorem fucking ipsum. The handy online tool, created by Good Fucking Design Advice, bills itself as the placeholder text for “people who have some fucking passion!” The site lets you choose either a number of paragraphs or words, and generates a barrage of very sweary text accordingly.
 
   </p>
+
 <button type="button" name="button" class="button-1" id="button">Fucking button</button>
 <h5 id="caption">This is fucking tiny caption</h5>
 </div>
@@ -58,6 +76,11 @@
 function applyColor() {
   var getColor = document.getElementById("myColor").value
   document.getElementById("bodyText").style.color = getColor
+}
+
+function myFunction(selectTag) {
+  var listValue = selectTag.options[selectTag.selectedIndex].text;
+  document.getElementById("title").style.fontWeight = listValue;
 }
 
 function applySize() {
@@ -76,7 +99,10 @@ function applySize() {
 function applyAll(){
   applyColor()
   applySize()
+
 }
+
+
 
 function myButton(){
   var fontSize = document.getElementById("myInput");

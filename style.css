@@ -61,15 +61,22 @@ font-family: "Poppins", sans-serif;
 
 .inputContainer{
 
-text-align: center;
+text-align: left;
 
 
 
 }
 #control{
   width: 350px;
-  background: lightgrey;
+  background: lightblue;
 float:left;
 height: 100vh
 
+}
+
+.inputField, select{
+  width: 70px;
+  height: 30px;
+  border: 1px solid lightgrey;
+border-radius: 3px;
 }

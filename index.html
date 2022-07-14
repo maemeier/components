@@ -111,12 +111,9 @@
 
   </p>
 
-<button type="button" name="button" class="button-1" id="button">Primary button</button>
-<button type="button" name="button" class="button-1" id="button">Secondary button</button>
-<button type="button" name="button" class="button-1" id="button">Success button</button>
-<button type="button" name="button" class="button-1" id="button">warning button</button>
-<button type="button" name="button" class="button-1" id="button">error button</button>
-<button type="button" name="button" class="button-testing" id="test-button">testing button</button>
+
+<!-- <button type="button" name="button"  id="button"></button> -->
+<button type="button" name="button" class="button-testing" id="button">testing button</button>
 <h4 id="caption">This is fucking tiny caption</h5>
   <!-- components -->
 
@@ -128,6 +125,8 @@
 function applyColor() {
   var getColor = document.getElementById("myColor").value
   document.getElementById("bodyText").style.color = getColor
+  document.getElementById("title").style.color = getColor
+  document.getElementById("subtitle").style.color = getColor
 }
 
 function myFunction(selectTag) {
@@ -152,7 +151,7 @@ function applySize() {
   document.getElementById("bodyText").style.fontSize = `${bodyTextSize}px`
   document.getElementById("button").style.fontSize = `${buttonSize}px`
   document.getElementById("caption").style.fontSize = `${captionSize}px`
-  document.getElementById("test-button").style.borderRadius = `${borderRadius}px`
+  document.getElementById("button").style.borderRadius = `${borderRadius}px`
 
 }
 

@@ -79,8 +79,8 @@ padding-top: 10px;
 .inputField, select{
   width: 100px;
   height: 30px;
-  border: 1px solid lightgrey;
-border-radius: 3px;
+  border:none;
+border-radius: 5px;
 padding: 5px;
 margin-left: 5px;
 margin-bottom: 5px;
@@ -100,7 +100,7 @@ padding-left: 10px
 h5{
   text-align: left;
   padding-left: 10px;
-  font-weight: normal;
+  font-weight: bold;
   padding-bottom: 15px;
   color:#222222 ;
   font-size: 16px

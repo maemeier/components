@@ -1,16 +1,27 @@
-console.log("Mae");
-<script type="text/javascript" src="script.js">
-  function myFunction() {
-  // Get the value of the input field with id="numb"
-  let x = document.getElementById("numb").value;
-  // If x is Not a Number or less than one or greater than 10
-  let text;
-  if (isNaN(x) || x < 1 || x > 10) {
-    text = "Input not valid";
-  } else {
-    text = "Input OK";
+
+function applySize(src, dst) {
+  document.getElementById(dst).style.fontSize = `${src.value}px`;
+}
+
+function applyBackgroundColor(src, dst){
+  document.getElementById(dst).style.backgroundColor = src.value
+}
+
+function applyColor(src, dst){
+  document.getElementById(dst).style.color = src.value
+}
+
+function applyColors(src, dsts){
+  for (let dst of dsts){
+    applyColor(src, dst);
   }
-  document.getElementById("demo").innerHTML = text;
+}
 
+function applyRadius(src, dst){
+  document.getElementById(dst).style.borderRadius = `${src.value}px`
+}
 
-</script>
+function applyWeight(src, dst){
+  var value = src.options[src.selectedIndex].text
+  document.getElementById(dst).style.fontWeight = value
+}

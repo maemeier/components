@@ -10,18 +10,19 @@ font-family: "Poppins", sans-serif;
 
 #control{
   text-align: center;
+  position: relative;
 }
 
-.parent{
-height: 100vh;
+p{
+  font-size: 14px
 }
-.container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transition: translate(-50%, -50%);
+#container{
+width: 1200px;
 
-
+ /* position: absolute;
+top:50%;
+left: 50%;
+transform: translate(-50%, -50%); */
 
 }
 
@@ -89,7 +90,7 @@ margin: auto;
 }
 #control{
   width: 450px;
-  background: lightblue;
+  background: #CDF0EA;
 float:left;
 height: 100vh;
 padding-top: 10px;
@@ -117,9 +118,24 @@ padding-bottom: 12px;
   height: 35px;
   padding: 0px;
   border: none;
-  border-radius: 5px;
   margin-left: 5px;
   background: none;
+
+}
+
+select{
+  font-family: "Poppins";
+  font-size: 12px
+}
+
+.colorPicker2{
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  border: none;
+  margin-left: 5px;
+  background: none;
+  display: block;
 
 }
 
@@ -139,7 +155,15 @@ h5{
 }
 .button-testing{
   padding: 10px;
-  border:none
+  border:none;
+  font-family: "Poppins"
+}
+
+.outline-button{
+  padding: 10px;
+  border:1px solid grey;
+  background:none;
+  font-family: "Poppins"
 }
 
 .colorPlatte{
@@ -148,6 +172,20 @@ h5{
   background-color: violet;
   display: inline-block;
 }
-.colorLable{
+
+.badge {
+  background-color: grey;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 3px;
+  margin-right: 10px
+}
+
+span{
+  font-size: 12px
+}
+.badgeBox{
+  display: flex;
 
 }

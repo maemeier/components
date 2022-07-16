@@ -103,35 +103,35 @@
 
           <div class="">
             <h5>background</h5>
-            <input type="color" class="colorPicker" onchange="applyBackgroundColor(this, 'primaryButton')">
-            <input type="color" class="colorPicker" onchange="applyBackgroundColor(this, 'secondaryButton')">
-            <input type="color" class="colorPicker">
-            <input type="color" class="colorPicker">
-            <input type="color" class="colorPicker">
+            <input type="color" class="colorPicker2" onchange="applyBackgroundColor(this, 'primaryButton')">
+            <input type="color" class="colorPicker2" onchange="applyBackgroundColor(this, 'secondaryButton')">
+            <input type="color" class="colorPicker2" onchange="applyBackgroundColor(this,'primaryBadge')">
+            <input type="color" class="colorPicker2">
+            <input type="color" class="colorPicker2">
           </div>
 
           <div class="">
             <h5>Text</h5>
-            <input type="color" class="colorPicker" onchange="applyColor(this, 'primaryButton')">
-            <input type="color" class="colorPicker" onchange="applyColor(this, 'secondaryButton')">
-            <input type="color" class="colorPicker">
-            <input type="color" class="colorPicker">
-            <input type="color" class="colorPicker">
+            <input type="color" class="colorPicker2" onchange="applyColor(this, 'primaryButton')">
+            <input type="color" class="colorPicker2" onchange="applyColor(this, 'secondaryButton')">
+            <input type="color" class="colorPicker2">
+            <input type="color" class="colorPicker2">
+            <input type="color" class="colorPicker2">
           </div>
 
         </div>
 
       </div>
-        <button type="button" name="button" class="button-1" onclick="applyAll()">Apply fucking all</button>
+      <!-- <button type="button" name="button" class="button-1" onclick="applyAll()">Apply fucking all</button> -->
     </div>
 
     <div class="parent">
       <div id="container">
         <h1 id="title">
-          This is fucking title
+          This is pretty title
         </h1>
         <h3 id="subtitle">
-          I'm a fucking subtitle, better keep it fucking short.
+          I'm a pretty subtitle, better keep it pretty short.
         </h3>
 
         <p id="body" class="paragraph">
@@ -139,21 +139,55 @@
           itself as the placeholder text for “people who have some fucking passion!” The site lets you choose either a number of paragraphs or words, and generates a barrage of very sweary text accordingly.
         </p>
 
-        <h4 id="caption">This is fucking tiny caption</h5>
+        <h4 id="caption">This is pretty tiny caption</h5>
 
           <button type="button" name="button" class="button-testing" id="button">testing button</button>
       </div>
 
       <div class="">
         <p>BUTTON COMPONENT</p>
+        <br>
         <button type="button" name="button" class="button-testing" id="primaryButton">
           <p id="primaryText">primary Button</p>
         </button>
         <button type="button" name="button" class="button-testing" id="secondaryButton">
           <p id="secondaryText">secondary Button</p>
         </button>
-        <button type="button" name="button" class="button-testing" id="outlineButton">Outline Button</button>
+        <button type="button" name="button" class="outline-button" id="outlineButton">Outline Button</button>
+        <div class="">
+          <p>BADGE COMPONENT</p>
+
+          <div class="badgeBox">
+            <div>
+              <span class="badge" id="primaryBadge">primary badge</span>
+            </div>
+
+            <div >
+              <span class="badge">secondary badge</span>
+            </div>
+
+            <div >
+              <span class="badge">success badge</span>
+            </div>
+
+            <div >
+              <span class="badge">warning badge</span>
+            </div>
+
+            <div >
+              <span class="badge">error badge</span>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
       </div>
+      <br>
+
 
     </div>
   </div>
@@ -161,4 +195,5 @@
   <script type="text/javascript" src="script.js">
   </script>
 </body>
+
 </html>
